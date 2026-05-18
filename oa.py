@@ -41,7 +41,7 @@ if __name__ == '__main__':
 
 
 
-ros2 launch rplidar_ros sflidar_c1_launch.py
+ros2 launch rplidar_ros rplidar_c1_launch.py
 
 ros2 run arjuna_motor_dps motor_driver
 
