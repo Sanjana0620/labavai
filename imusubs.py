@@ -40,3 +40,17 @@ def main():
         rclpy.shutdown()
 if __name__ == '__main__':
     main()
+
+
+
+
+
+ros2 launch rplidar_ros rplidar_c1_launch.py
+
+ros2 run imu-bno055 bno055_i2c_node
+
+ros2 launch camera_teaching teaching_launch.py
+
+ros2 run arjuna_sensors imu_subscriber
+
+rviz2
