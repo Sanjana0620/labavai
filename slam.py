@@ -37,3 +37,14 @@ def generate_launch_description():
             output='screen'
         ),
     ])
+
+
+
+
+ros2 run arjuna_motor_dps motor_driver
+
+ros2 run arjuna_controllers teleop-keyboard
+
+ros2 launch arjuna_slam slam_mapping_launch.py
+
+ros2 run nav2_map_server map_saver_cli -f my_map
